@@ -14,13 +14,13 @@
   <script>
     const divElement = document.querySelector('#myDiv');
     const inputElement = document.createElement('#name');
-    inputElement.addEventListener('input', function() {
-            divElement = inputElement.value;
-        });
-    
+    inputElement.addEventListener('input', function () {
+      divElement.textContent = inputElement.value;
+    });
 
-    
-    
+
+
+
   </script>
 </body>
 
