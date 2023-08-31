@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
+
 let name ="mariam";
 let surname = "suleiman";
 let city ="Akkar";
-alert("Nom : " +name+ "\nPrenom : "+surname+"\nCity : "+city);})
+alert("Nom : " +name+ "\nPrenom : "+surname+"\nCity : "+city);
 
