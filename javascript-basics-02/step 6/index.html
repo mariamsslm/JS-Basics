@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Step 6</title>
-  </head>
-  <body>
-      <img src="images/image1.jpg" id="image1"  class="hover-image"/>
-      <img src="images/image2.jpg" id="image2" class="hover-image" />
-      <img src="images/image3.jpg" id="image3" class="hover-image"/>
-      <img src="images/image4.jpg" id="image4" class="hover-image"/>
-      <img src="images/image5.jpg" id="image5" class="hover-image" />
-  </body>
-  <script>
-    const images = document.querySelectorAll('.hover-image');
 
-    // Loop through each image
-    images.forEach(function(image) {
-        // Store the original source
-        const originalSrc = image.src;
-        
-        // Add event listener for mouseover
-        image.addEventListener('mouseover', function() {
-            // Change the image source on mouseover
-            image.src = 'new_image.jpg';
-        });
+<head>
+  <meta charset="utf-8">
+  <title>Step 6</title>
+</head>
 
-        // Add event listener for mouseout
-        image.addEventListener('mouseout', function() {
-            // Restore the original image source on mouseout
-            image.src = originalSrc;
-        });
+<body>
+  <img src="images/image1.jpg" id="image1" class="hover-image" />
+  <img src="images/image2.jpg" id="image2" class="hover-image" />
+  <img src="images/image3.jpg" id="image3" class="hover-image" />
+  <img src="images/image4.jpg" id="image4" class="hover-image" />
+  <img src="images/image5.jpg" id="image5" class="hover-image" />
+</body>
+<script>
+  const images = document.querySelectorAll('.hover-image');
+  images.forEach(function (image) {
+
+    const originalSrc = image.src;
+
+    image.addEventListener('mouseover', function () {
+
+      image.src = 'new_image.jpg';
     });
+
+    image.addEventListener('mouseout', function () {
+
+      image.src = originalSrc;
+    });
+  });
 </script>
+
 </html>
