@@ -1,8 +1,8 @@
-function ask() {
-    var name = document.getElementById("name").value;
-    var surname = document.getElementById("surname").value;
-    var city = document.getElementById("city").value;
+document.addEventListener("DOMContentLoaded", () => {
+    let name = prompt("entre your name");
+    let surname = prompt("entre your surname");
+    let  city = prompt("entre your city");
 
     alert("Hello I am " +name+" "+surname+" "+"I live in " +city );
-}
+})
 
