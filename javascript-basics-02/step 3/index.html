@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Step 3</title>
 </head>
+
 <body>
   <form>
-    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
+    <label for="name">Your name : </label><input type="text" name="name" value="" id="name" />
+    <div id="myDiv"></div>
   </form>
+  <script>
+    const divElement = document.querySelector('#myDiv');
+    const inputElement = document.createElement('#name');
+    inputElement.addEventListener('input', function() {
+            divElement = inputElement.value;
+        });
+    
+
+    
+    
+  </script>
 </body>
+
 </html>
