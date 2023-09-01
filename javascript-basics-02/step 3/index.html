@@ -9,14 +9,20 @@
 <body>
   <form>
     <label for="name">Your name : </label><input type="text" name="name" value="" id="name" />
-    <div id="myDiv"></div>
+   
   </form>
   <script>
-    const divElement = document.querySelector('#myDiv');
-    const inputElement = document.createElement('#name');
-    inputElement.addEventListener('input', function () {
-      divElement.textContent = inputElement.value;
+    let input = document.querySelector("#name")
+    const divElement = document.createElement('div');
+    const formm= document.querySelector("form")
+    formm.appendChild(divElement)
+    divElement.textContent="result"
+    console.log(formm)
+    input.addEventListener('input', () => {
+    divElement.innerText=input.value;
     });
+
+  
 
 
 
