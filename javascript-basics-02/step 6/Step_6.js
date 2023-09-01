@@ -1,15 +1,14 @@
-const images = document.querySelectorAll('.hover-image');
-  images.forEach(function (image) {
+let images = document.querySelectorAll("img")
+for(let i = 0 ; i< images.length; i++){
+  images[i].addEventListener("mouseover" , function(){
+    images[i].src = "images/image" + (i+1) + "_2.jpg"
+  })
+  
+}
 
-    const originalSrc = image.src;
-
-    image.addEventListener('mouseover', function () {
-
-      image.src = 'new_image.jpg';
-    });
-
-    image.addEventListener('mouseout', function () {
-
-      image.src = originalSrc;
-    });
-  });
+for(let i = 0 ; i< images.length; i++){
+  images[i].addEventListener("mouseout" , function(){
+    images[i].src = "images/image" + (i+1) + ".jpg"
+  })
+  
+}
