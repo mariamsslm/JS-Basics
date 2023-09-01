@@ -1,5 +1,6 @@
-let links= document.querySelectorAll("a");
+let links= document.querySelectorAll("a")
 let div= document.querySelector("#texte")
+
 links.forEach(link =>{
     link.addEventListener("click" , (e)=>{
         if (e.target.id === "hide"){
